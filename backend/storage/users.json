@@ -1,0 +1,30 @@
+[
+  {
+    "id": "c2bc5ac1-cdc5-4de9-bff8-4ef53cb4bd0a",
+    "name": "Anup AG",
+    "email": "anupag2002@gmail.com",
+    "password": "f42c01d96de2a933a849b2fe76804f8cc85e060cf0a720442cf95c96bf39ea4e",
+    "role": "user"
+  },
+  {
+    "id": "b87749f5-9039-4d36-871b-9432cf44c6ac",
+    "name": "Vastav",
+    "email": "janyavulasaisrivastav1@amityonline.com",
+    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "role": "admin"
+  },
+  {
+    "id": "b78e9dfe-63a3-4d42-9fcb-93d864ee849d",
+    "name": "Thilak L",
+    "email": "thilakmsd66@gmail.com",
+    "password": "8edda2eb6a3534c6b789d0e40a27a1079763e7e8ac7bdb41165e5ab4b9d48957",
+    "role": "user"
+  },
+  {
+    "id": "67be7dd0-4aa5-4005-8653-17d3581ae497",
+    "name": "Hepziba Nancy",
+    "email": "hepzibanancy.arulraj@hcltech.com",
+    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "role": "user"
+  }
+]

@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+google-generativeai
+faiss-cpu
+sentence-transformers
+python-multipart

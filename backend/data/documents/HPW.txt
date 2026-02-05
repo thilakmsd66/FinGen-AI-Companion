@@ -1,0 +1,2 @@
+HPW is a pricing application in statestreet. It is called as Hierarchical Pricing Workflow. It is the funds buying the other fund in hierarchical structure.
+It handles EMEA region (CI309) using MCH backend. It has all the different tasks in the specific job group for the particular clients like Investec etc.

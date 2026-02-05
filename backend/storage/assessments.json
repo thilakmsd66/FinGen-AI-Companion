@@ -1,0 +1,562 @@
+[
+  {
+    "score": 8,
+    "feedback": "Correctly identifies key aspects, but could elaborate more on one point. Consider reviewing the specific instructions provided by State Street Bank for detailed guidance.",
+    "expected_points": [
+      "Understanding of LIT definition and impact",
+      "Awareness of regulatory requirements",
+      "Knowledge of ASM process steps",
+      "Ability to identify critical control points",
+      "Understanding of potential consequences of inadequate process"
+    ],
+    "question": "Here's an example of a State Street Bank ASM L2 custody banking assessment question:\n\nWhat are the key considerations when evaluating the adequacy of a custodian's process for handling late or missing instruction transmissions (LITs) in the context of ASM?",
+    "answer": "Here's an example of a State Street Bank ASM L2 custody banking assessment question: What are the key considerations when evaluating the adequacy of a custodian's process for handling late or missing instruction transmissions (LITs) in the context of ASM?",
+    "timestamp": "2025-12-26T17:46:24.741945"
+  },
+  {
+    "score": 6,
+    "feedback": "The answer provides some key indicators but could benefit from more detail. Additional indicators, such as liquidity ratios, diversification metrics, and leverage levels, are also important in evaluating an asset manager's overall risk profile.",
+    "expected_points": [
+      "Credit Rating",
+      "Asset Manager's Business Model",
+      "Net Asset Value (NAV) Growth"
+    ],
+    "question": "What are the key indicators used in the State Street Bank ASM Platform to evaluate an asset manager's overall risk profile for Custody Banking services?",
+    "answer": "The State Street Bank Asset Servicing Management (ASM) Platform uses a range of key indicators to evaluate an asset manager's overall risk profile for Custody Banking services. Here are some of the key indicators used:\n\nCredit Rating: The custodian bank assesses the credit rating of the asset manager, which provides an indication of their ability to meet financial obligations.\nAsset Manager's Business Model: The ASM Platform evaluates the asset manager's business model, including their investment strategies, product offerings, and fees, to understand their risk profile.\nNet Asset Value (NAV) Growth: The growth rate of the net asset value of the funds under management is an indicator of the asset manager's financial health and ability to manage risk.",
+    "timestamp": "2025-12-26T17:48:04.933660"
+  },
+  {
+    "score": 9,
+    "feedback": "The answer is mostly correct but could benefit from more details. Correctly identified primary triggers and provided some corrective actions, however, did not provide a comprehensive list of actions.",
+    "expected_points": [
+      "Identify the primary triggers for ARC process failure (2 points)",
+      "List two or more corrective actions to resolve the issue (3 points)",
+      "Provide at least one additional detail or example to support the answer (4 points)"
+    ],
+    "question": "Here is an example of a State Street Bank ASM L2 custody banking assessment question:\n\nWhat are the primary triggers for an Automatic Reconciliation (ARC) process failure in ASM, and what are the corrective actions required to resolve the issue?",
+    "answer": "Here is an example of a State Street Bank ASM L2 custody banking assessment question: What are the primary triggers for an Automatic Reconciliation (ARC) process failure in ASM, and what are the corrective actions required to resolve the issue?",
+    "timestamp": "2025-12-26T17:57:35.602937"
+  },
+  {
+    "score": 9,
+    "feedback": "The answer should have included 'Insufficient Data' and 'System Errors' as primary triggers. Corrective actions should include checking data quality, verifying system logs, and escalating issues to ASM support. The answer is mostly correct but lacks specificity.",
+    "expected_points": [
+      "Identify primary trigger: Insufficient Data",
+      "Identify primary trigger: System Errors",
+      "Corrective action: Check data quality",
+      "Corrective action: Verify system logs",
+      "Corrective action: Escalate to ASM support"
+    ],
+    "question": "Here is an example of a State Street Bank ASM L2 custody banking assessment question:\n\nWhat are the primary triggers for an Automatic Reconciliation (ARC) process failure in ASM, and what are the corrective actions required to resolve the issue?",
+    "answer": "Here is an example of a State Street Bank ASM L2 custody banking assessment question: What are the primary triggers for an Automatic Reconciliation (ARC) process failure in ASM, and what are the corrective actions required to resolve the issue?",
+    "timestamp": "2025-12-26T17:58:02.552542"
+  },
+  {
+    "score": 9,
+    "feedback": "The requested transfer complies with ASM policies as it doesn't involve violating any reserve requirements, but ensure the client understands the implications of not maintaining a liquidity reserve in the Euro account.",
+    "expected_points": [
+      "Understands policy specifics",
+      "Analyzes request for compliance",
+      "Provides clear feedback"
+    ],
+    "question": "Here's an ASM L2 custody banking assessment question:\n\nA client is requesting the transfer of approximately $100M from their US dollar-denominated account to a newly established Euro-denominated account. The existing US account has a liquidity reserve requirement and the new Euro account does not. How should this request be evaluated in terms of compliance with State Street Bank's ASM policies, specifically regarding reserve requirements?",
+    "answer": "Here's an ASM L2 custody banking assessment question: A client is requesting the transfer of approximately $100M from their US dollar-denominated account to a newly established Euro-denominated account. The existing US account has a liquidity reserve requirement and the new Euro account does not. How should this request be evaluated in terms of compliance with State Street Bank's ASM policies, specifically regarding reserve requirements?",
+    "timestamp": "2025-12-26T17:58:43.981547"
+  },
+  {
+    "score": 8,
+    "feedback": "The FINRA Rule 605 requires custodians to prioritize best execution by minimizing costs and optimizing execution quality. To evaluate a custodian's capacity, consider factors such as their ability to aggregate trading data, implement market-making algorithms, and provide real-time reporting on transaction costs and performance metrics.",
+    "expected_points": [
+      "Aggregating trading data",
+      "Implementing market-making algorithms",
+      "Providing real-time reporting"
+    ],
+    "question": "Here's an ASM L2 custody banking assessment question:\n\nWhat are the primary considerations for evaluating a custodian's capacity to meet the regulatory requirements of the Financial Industry Regulatory Authority (FINRA) Rule 605, which pertains to best execution in custody banking?",
+    "answer": "Here's an ASM L2 custody banking assessment question: What are the primary considerations for evaluating a custodian's capacity to meet the regulatory requirements of the Financial Industry Regulatory Authority (FINRA) Rule 605, which pertains to best execution in custody banking",
+    "timestamp": "2025-12-26T18:03:15.601154"
+  },
+  {
+    "score": 8,
+    "feedback": "The answer is mostly correct, but could provide more detail. Consideration of the settlement cycle's impact on liquidity and tax implications was missed.",
+    "expected_points": [
+      "Settlement cycle timing",
+      "Liquidity management",
+      "Tax implications",
+      "Frequency of cash transfers"
+    ],
+    "question": "Here's an example of a State Street Bank ASM L2 custody banking assessment question:\n\n**Question:** What are the primary considerations when configuring the settlement cycle for a new fund in ASM, and how do these impact the frequency of cash transfers between asset managers and custodians?",
+    "answer": "Here's an example of a State Street Bank ASM L2 custody banking assessment question: **Question:** What are the primary considerations when configuring the settlement cycle for a new fund in ASM, and how do these impact the frequency of cash transfers between asset managers and custodians?",
+    "timestamp": "2025-12-27T04:24:57.000316"
+  },
+  {
+    "score": 10,
+    "feedback": "Excellent explanation of the importance of operational risk management and common sources of operational risk.",
+    "expected_points": [
+      "Understanding the impact of ORM on business continuity",
+      "Identifying common sources of operational risk",
+      "Outlining steps to implement an ORM strategy"
+    ],
+    "question": "What are the primary considerations for identifying and mitigating operational risk in the ASM platform, particularly when evaluating the efficacy of the Control and Risk Management (CRM) process?",
+    "answer": "Having an operational risk management strategy is vital for your company. Discover why, along with some common sources of operational risk and the steps you can take to implement your ORM strategy.",
+    "timestamp": "2025-12-27T04:37:37.444878"
+  },
+  {
+    "score": 6,
+    "feedback": "The answer is partially correct as it highlights the importance of operational risk management, but it lacks specific details about identifying and mitigating risks in the ASM platform.",
+    "expected_points": [
+      "be more specific",
+      "provide details about the CRM process",
+      "elaborate on the importance"
+    ],
+    "question": "What are the primary considerations for identifying and mitigating operational risk in the ASM platform, particularly when evaluating the efficacy of the Control and Risk Management (CRM) process?",
+    "answer": "Having an operational risk management strategy is vital for your company.",
+    "timestamp": "2025-12-27T04:37:55.638003"
+  },
+  {
+    "score": 8,
+    "feedback": "To mitigate risks, ensure thorough risk assessment, implement robust testing, establish clear communication channels with the third-party feeder fund provider, and monitor their regulatory compliance. Also, consider conducting a thorough review of their operational processes to identify potential integration challenges.",
+    "expected_points": [
+      "1",
+      "2",
+      "3"
+    ],
+    "question": "What are the primary risks associated with implementing a new third-party feeder fund in an Asset Management System (AMS), and how would you recommend mitigating these risks within our existing risk management framework?",
+    "answer": "What are the primary risks associated with implementing a new third-party feeder fund in an Asset Management System (AMS), and how would you recommend mitigating these risks within our existing risk management framework?",
+    "timestamp": "2026-01-01T09:03:29.669629"
+  },
+  {
+    "score": 8,
+    "feedback": "Correct answer choice B is the most efficient way for the custodian to settle this request, as it directly addresses the investor's request and eliminates the need for additional confirmations or intermediaries.",
+    "expected_points": [
+      "B"
+    ],
+    "question": "Here's an example of a State Street Bank ASM L2 custody banking assessment question:\n\n**Question:**\n\nAn investor is holding a portfolio consisting of US stocks and international bonds through an ASP (Accredited Securities Program). The custodian holds the US stocks directly in the investor's name, while the bonds are held in omnibus accounts. If the investor requests cash, what is the most efficient way for the custodian to settle this request?\n\nPlease select a response from the options below:\n\nA) Custodian sends a confirmatory statement to the investor\nB) Custodian disburses cash directly to the investor's account\nC) Custodian holds the cash in an omnibus account and settles through an ASP\nD) Custodian provides instructions to the investor's broker\n\nPlease choose your response.",
+    "answer": "Here's an example of a State Street Bank ASM L2 custody banking assessment question: **Question:** An investor is holding a portfolio consisting of US stocks and international bonds through an ASP (Accredited Securities Program). The custodian holds the US stocks directly in the investor's name, while the bonds are held in omnibus accounts. If the investor requests cash, what is the most efficient way for the custodian to settle this request? Please select a response from the options below: A) Custodian sends a confirmatory statement to the investor B) Custodian disburses cash directly to the investor's account C) Custodian holds the cash in an omnibus account and settles through an ASP D) Custodian provides instructions to the investor's broker Please choose your response.",
+    "timestamp": "2026-01-04T17:22:55.979456"
+  },
+  {
+    "score": 10,
+    "feedback": "Correct answer demonstrates an understanding of the primary role of a custodian bank and the efficient way to settle an investor's request for cash. The reasoning provides clear explanations of the custodial functions and their application in this scenario.",
+    "expected_points": [
+      "Efficiently explains the role of the custodian",
+      "Correctly identifies the direct disbursement method"
+    ],
+    "question": "Here's an example of a State Street Bank ASM L2 custody banking assessment question:\n\n**Question:**\n\nAn investor is holding a portfolio consisting of US stocks and international bonds through an ASP (Accredited Securities Program). The custodian holds the US stocks directly in the investor's name, while the bonds are held in omnibus accounts. If the investor requests cash, what is the most efficient way for the custodian to settle this request?\n\nPlease select a response from the options below:\n\nA) Custodian sends a confirmatory statement to the investor\nB) Custodian disburses cash directly to the investor's account\nC) Custodian holds the cash in an omnibus account and settles through an ASP\nD) Custodian provides instructions to the investor's broker\n\nPlease choose your response.",
+    "answer": "The most efficient way for the custodian to settle the investor's request for cash is for the custodian to disburse cash directly to the investor's account (B). \nHere is the reasoning:\nA custodian bank's primary role is to hold assets (securities) securely and manage transactions, including the disbursement of cash [1].\nWhen an investor requests cash, the custodian would typically facilitate the sale of sufficient assets from the portfolio to generate the required cash.\nOnce the assets are sold and the funds received, the most direct and efficient method is for the custodian to transfer the cash directly into a designated cash account belonging to the investor.\nThe setup described (stocks held in the investor's name, bonds in omnibus accounts) is standard and does not prevent the direct disbursement of cash. The key function of a custodian in a servicing agreement is to process such client instructions promptly and efficiently. ",
+    "timestamp": "2026-01-04T17:25:03.209687"
+  },
+  {
+    "score": 6,
+    "feedback": "The primary purpose of a Reconciliations Analysis report is to help identify discrepancies and potential issues in the corporate actions reconciliation process. It provides an in-depth analysis of the reconciliations, highlighting differences between expected and actual values, which can aid in resolving outstanding items. However, it could provide more detailed explanations for specific discrepancies.",
+    "expected_points": [
+      "Understanding the purpose of Reconciliations Analysis reports",
+      "Identifying discrepancies in corporate actions reconciliation",
+      "Resolving outstanding items with the report's help"
+    ],
+    "question": "What is the primary purpose of a \"Reconciliations Analysis\" report in a corporate actions reconciliation process?",
+    "answer": "What is the primary purpose of a \"Reconciliations Analysis\" report in a corporate actions reconciliation process?",
+    "timestamp": "2026-01-06T13:49:44.398050"
+  },
+  {
+    "score": 8,
+    "feedback": "The expected outcome when a report request is successfully submitted through the Poststrasse Front End application and the corresponding batch job is executed by the Poststrasse Back End application is that the requested report is sent to the client's address in AFP/SWIFT format. However, since DB Print manually posts the reports to their clients, there may be a slight delay or discrepancy in the reporting timeline.",
+    "expected_points": [
+      "The report is successfully submitted through the Poststrasse Front End application",
+      "The corresponding batch job is executed by the Poststrasse Back End application",
+      "The requested report is sent to the client's address in AFP/SWIFT format (with potential delay or discrepancy due to manual posting by DB Print)"
+    ],
+    "question": "What is the expected outcome when a report request is successfully submitted through the Poststrasse Front End application, and the corresponding batch job is executed by the Poststrasse Back End application?",
+    "answer": "In the process of becoming global leader in Security Custody business State Street Corporation acquired subsidiary of Deutsch Bank AG, which operates in security custody business in German market.  Because of this acquisition, State Street Corporation is now integrating its systems with Deutsche Bank AG (renamed as State Street GmbH after acquisition). Poststrasse is one of the systems of State Street GmbH that sends requested reports in AFP / SWIFT format to DB Print for printing. The printing facility of DB Print prints these reports and manually posts to their clients at their mailing address. This is a critical application since it is open for the clients and any small mistake can be indicated back to State Street.\nAt a high level, the Poststrasse application consists of a Front End Application, and a Back End Application.\nThe Poststrasse Front End application is an online application with a web client that allows its users to deal with Link (Unique combination of Fund, Address and Report Type) and Queue (Links in processing state). Whenever any user wants any specific report of a particular fund to be mailed to his/her address, he/she can create a Link using the requested Fund, Report type and his/her address. User can view the status of execution of any report type; he/she has requested for and can also update the schedules of his/her report as per their requirements. \nThe Poststrasse Back End application is a set of daily, monthly, quarterly and yearly batch processing programs that executes as per the schedule set by the users. Its users schedule the reports (using PS Front end) at any specified time and back end invokes different handlers to execute it at the scheduled time. Currently Poststrasse is creating 7 different types reports in AFP format.",
+    "timestamp": "2026-01-06T19:13:41.302654"
+  },
+  {
+    "score": 0,
+    "feedback": "Invalid evaluation format from AI.",
+    "expected_points": [],
+    "question": "**State Street Production Support Custody Banking Assessment Question**\n\n**Section: Poststrasse Application**\n\nWhat is the primary purpose of the Poststrasse application, and what format does it send requested reports to DB Print for printing?",
+    "answer": "It sends in SFTP format\n",
+    "timestamp": "2026-02-04T03:06:13.442587"
+  },
+  {
+    "score": 0,
+    "feedback": "Invalid evaluation format from AI.",
+    "expected_points": [],
+    "question": "**State Street Production Support Custody Banking Assessment Question**\n\n**Section: Poststrasse Application**\n\nWhat is the primary purpose of the Poststrasse application, and what format does it send requested reports to DB Print for printing?",
+    "answer": "**State Street Production Support Custody Banking Assessment Question** **Section: Poststrasse Application** What is the primary purpose of the Poststrasse application, and what format does it send requested reports to DB Print for printing?",
+    "timestamp": "2026-02-04T03:06:39.836071"
+  },
+  {
+    "score": 0,
+    "feedback": "Invalid evaluation format from AI.",
+    "expected_points": [],
+    "question": "**State Street Production Support Custody Banking Assessment Question**\n\n**Section: Poststrasse Application**\n\nWhat is the primary purpose of the Poststrasse application, and what format does it send requested reports to DB Print for printing?",
+    "answer": "Primary Purpose of the Poststrasse Application is to send the reports directly to the addresses\n",
+    "timestamp": "2026-02-04T03:10:13.311230"
+  },
+  {
+    "score": 4,
+    "category": "Partially Correct",
+    "feedback": "The primary purpose of the Poststrasse application is not just sending reports to addresses. It also handles other functionalities.",
+    "expected_points": [
+      "Send reports to addresses",
+      "Handle other Poststrasse functionalities"
+    ],
+    "question": "**State Street Production Support Custody Banking Assessment Question**\n\n**Section: Poststrasse Application**\n\nWhat is the primary purpose of the Poststrasse application, and what format does it send requested reports to DB Print for printing?",
+    "answer": "Primary Purpose of the Poststrasse Application is to send the reports directly to the addresses\n",
+    "timestamp": "2026-02-04T03:13:12.388772"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "HPW is actually a pricing workflow used for multiple asset classes, it uses a hierarchical approach to calculate prices. Please clarify what you mean by HPW and Pricing in State Street.",
+    "expected_points": [
+      "Definition of HPW",
+      "Difference between HPW and State Street Pricing"
+    ],
+    "question": "Here is a State Street Bank Production Support custody banking assessment question:\n\nWhat is the primary difference between HPW (Hierarchical Pricing Workflow) and Pricing in State Street, specifically regarding the data source and purpose of each?",
+    "answer": "HPW is (Hierarchical Pricing Workflow)",
+    "timestamp": "2026-02-04T03:15:08.420621"
+  },
+  {
+    "score": 7,
+    "category": "Mostly Correct",
+    "feedback": "Poststrasse application typically requires manual posting of reports in AFP/SWIFT format for distribution to clients. Typically, the primary triggers include: report date changes, account balance updates, or certain transaction types. Manual posting by DB Print is often required due to security restrictions.",
+    "expected_points": [
+      "report date changes",
+      "account balance updates",
+      "certain transaction types"
+    ],
+    "question": "Here is a custody banking assessment question:\n\nWhat are the primary triggers that will initiate the Poststrasse application to generate and print reports in AFP/SWIFT format, which require manual posting by DB Print for distribution to clients?",
+    "answer": "OSI backend and frontend",
+    "timestamp": "2026-02-04T03:24:04.845935"
+  },
+  {
+    "score": 7,
+    "category": "Mostly Correct",
+    "feedback": "Review HPW job logs to identify previous runs, check if any errors occurred during execution. Also, verify if the report configuration is correct and if the required data is available.",
+    "expected_points": [
+      "Review job logs",
+      "Check report configuration",
+      "Verify data availability"
+    ],
+    "question": "Here is a State Street Bank Production Support custody banking assessment question:\n\nWhat would be the next step in troubleshooting an issue with HPW (Hierarchical Pricing Workflow) where reports are not being generated for a specific client fund due to an error, and the Poststrasse Front End application indicates that there are no active jobs or queues?",
+    "answer": "Here is a State Street Bank Production Support custody banking assessment question:\n\nWhat would be the next step in troubleshooting an issue with HPW (Hierarchical Pricing Workflow) where reports are not being generated for a specific client fund due to an error, and the Poststrasse Front End application indicates that there are no active jobs or queues?",
+    "timestamp": "2026-02-04T04:15:38.486449"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "HPW helps manage complex pricing structures for clients across multiple regions. It automates the process of updating prices based on changes in market conditions, allowing for more efficient and accurate pricing transactions.",
+    "expected_points": [
+      "Primary purpose of HPW application",
+      "Handling pricing transactions across different regions",
+      "Automated price updates"
+    ],
+    "question": "Here is a production support custody banking assessment question:\n\nWhat is the primary purpose of the HPW (Hierarchical Pricing Workflow) application in State Street Bank, and how does it handle pricing transactions for clients across different regions?",
+    "answer": "Here is a production support custody banking assessment question:\n\nWhat is the primary purpose of the HPW (Hierarchical Pricing Workflow) application in State Street Bank, and how does it handle pricing transactions for clients across different regions?",
+    "timestamp": "2026-02-04T04:45:41.729922"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "The initial assumption is too narrow. The issue could also be related to database or reporting schedule settings, not just a simple memory issue.",
+    "expected_points": [
+      "Understand the investor's statement generation process",
+      "Consider multiple potential causes",
+      "Avoid jumping to conclusions"
+    ],
+    "question": "Here is a production support custody banking assessment question:\n\n\"An investor reports that their statement for Fund XYZ has not been generated in over 3 months despite being due for regular reporting. The investor had scheduled the report to be generated on the 15th of each month, but it appears that no one has reviewed or processed this report since its initial setup. What steps should an ASM L2 Support Engineer take to resolve this issue?\"",
+    "answer": "I think s issue?\"there should be an out of memory issue and application has been stopped.",
+    "timestamp": "2026-02-04T05:52:46.876419"
+  },
+  {
+    "score": 7,
+    "category": "Mostly Correct",
+    "feedback": "The engineer should review the fund's setup and confirm the reporting schedule is correct. They should also contact the operation team to check if there are any issues with the report generation process or if it was intentionally paused. Additionally, the engineer may need to escalate the issue to a higher authority for further investigation.",
+    "expected_points": [
+      "Confirm reporting schedule",
+      "Contact operation team",
+      "Escalate to higher authority"
+    ],
+    "question": "Here is a production support custody banking assessment question:\n\n\"An investor reports that their statement for Fund XYZ has not been generated in over 3 months despite being due for regular reporting. The investor had scheduled the report to be generated on the 15th of each month, but it appears that no one has reviewed or processed this report since its initial setup. What steps should an ASM L2 Support Engineer take to resolve this issue?\"",
+    "answer": "Here is a production support custody banking assessment question:\n\n\"An investor reports that their statement for Fund XYZ has not been generated in over 3 months despite being due for regular reporting. The investor had scheduled the report to be generated on the 15th of each month, but it appears that no one has reviewed or processed this report since its initial setup. What steps should an ASM L2 Support Engineer take to resolve this issue?\"",
+    "timestamp": "2026-02-04T05:53:26.613871"
+  },
+  {
+    "score": 6,
+    "category": "Partially Correct",
+    "feedback": "Correctly identified the purpose, but incomplete. The primary purpose of Poststrasse is also to validate and prepare reports for delivery.",
+    "expected_points": [
+      "report processing",
+      "AFT/SWIFT format",
+      "DB bank validation"
+    ],
+    "question": "Here's a production support custody banking assessment question:\n\nWhat is the primary purpose of the Poststrasse application in State Street Bank, and what are the potential consequences if it experiences an outage or error?",
+    "answer": "Primary purpose of the Poststrasse application in state street bank is process the reports and send in AFT/SWIFT format to the DB bank\n",
+    "timestamp": "2026-02-04T06:35:02.803838"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "Answer could not be evaluated due to format issues.",
+    "expected_points": [],
+    "question": "What is the expected impact on production if a Fundsuite application fails to process a data load for an investment fund, resulting in delayed statement creation and potential customer inconvenience?",
+    "answer": "What is the expected impact on production if a Fundsuite application fails to process a data load for an investment fund, resulting in delayed statement creation and potential customer inconvenience?",
+    "timestamp": "2026-02-04T06:35:59.280589"
+  },
+  {
+    "score": 6,
+    "category": "Partially Correct",
+    "feedback": "Good start by identifying potential formatting issues, but consider analyzing server logs more thoroughly for configuration changes or other anomalies that may be causing the memory usage issue.",
+    "expected_points": [
+      "Identify potential application issues",
+      "Analyze server logs",
+      "Consider further investigation"
+    ],
+    "question": "Here is a production support custody banking assessment question:\n\n\"As an ASM L2 Support Engineer at State Street Bank, you are troubleshooting an issue with the Poststrasse application where reports are not being printed correctly in AFP format. The user reporting this issue states that the server frontend logs show high memory usage, but the Autosys JCI recycling of the server has been performed and the issue persists. What additional steps would you take to troubleshoot this issue further?\"",
+    "answer": "I think there might be some formatting issues within the application. We might need to look further into logs to check what might have happened",
+    "timestamp": "2026-02-04T06:44:54.551329"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Cache data properly in registers and correctly handle line alignment.",
+    "expected_points": [
+      "line alignment",
+      "register handling",
+      "cache implementation"
+    ],
+    "question": "Here's a simple ASM (Assembly Language) L2 (Level 2) memory cache support question:\n\n**Question:** Write an assembly code to implement a small L2 cache that stores 8 words of data, with each word consisting of 32 bits. The cache has a line size of 64 bytes (which is the natural alignment for most processors). Implement the following operations:\n\n1. Initialize the cache with the initial values.\n2. Write a data word into the cache.\n3. Read a data word from the cache.\n\n**Assumptions:**\n\n* The system uses a simple, uniform memory access pattern.\n* There are no cache misses.\n* The processor has a natural alignment of 64 bytes for the L2 cache line size.\n\n**Constraints:**\n\n* Use only x86 assembly syntax and instructions (e.g., `mov`, `add`, `mul`, etc.).\n* Assume a 32-bit system with a word size of 32 bits.\n* Do not use any external libraries or dependencies.\n\nCan you write the assembly code to implement this L2 cache?",
+    "answer": "Here's a simple ASM (Assembly Language) L2 (Level 2) memory cache support question:\n\nQuestion: Write an assembly code to implement a small L2 cache that stores 8 words of data, with each word consisting of 32 bits. The cache has a line size of 64 bytes (which is the natural alignment for most processors). Implement the following operations:\n\nInitialize the cache with the initial values.\nWrite a data word into the cache.\nRead a data word from the cache.\nAssumptions:\n\nThe system uses a simple, uniform memory access pattern.\nThere are no cache misses.\nThe processor has a natural alignment of 64 bytes for the L2 cache line size.\nConstraints:\n\nUse only x86 assembly syntax and instructions (e.g., mov, add, mul, etc.).\nAssume a 32-bit system with a word size of 32 bits.\nDo not use any external libraries or dependencies.\nCan you write the assembly code to implement this L2 cache?",
+    "timestamp": "2026-02-04T08:04:30.469814"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "The answer provides a clear step-by-step approach to addressing the issue with the client's order. The key concepts of communicating with the client, verifying order details, determining available options, complying with Reg BI, and coordinating with internal stakeholders are all well-covered. However, there is no explicit mention of escalating the issue to senior management or involving the firm's risk department if necessary.",
+    "expected_points": [
+      "Communicate with the client",
+      "Verify the order details",
+      "Determine the available options",
+      "Comply with Reg BI",
+      "Coordinate with internal stakeholders"
+    ],
+    "question": "Here's a production-level L2 ASM support question related to custody banking with medium difficulty:\n\n**Question:**\n\nA customer has placed an order to sell 100 shares of XYZ Inc. stock held in their taxable brokerage account. The client's custodian is reporting that the order was not fully executed due to a limit on the number of trades allowed per day for this specific security. How would you advise the client and what steps would you take to facilitate the trade, ensuring compliance with applicable laws and regulations, such as Reg BI?\n\n**Expected Answer:**\n\nTo address this situation, I would follow these steps:\n\n1. **Communicate with the client**: Inform the client that there was an issue with their order due to the daily trading limit for XYZ Inc. stock and explain the reason for the limitation.\n2. **Verify the order details**: Review the order submission process to ensure that all necessary documentation, including the order ticket and trade confirmation, were properly executed.\n3. **Determine the available options**: Explore alternative execution strategies, such as:\n\t* Breaking down the order into smaller lots, if possible.\n\t* Considering alternative securities or markets with less stringent trading limits.\n\t* Using a different custodian or broker that may have more flexible trading rules.\n4. **Comply with Reg BI**: Ensure that all actions taken are in compliance with the Regulatory Capital Requirements (Reg BI). This includes:\n\t* Conducting a thorough review of the client's account activity to identify any potential conflicts of interest or undue influence.\n\t* Verifying that the client is aware of and understands the trading limits and associated risks.\n\t* Implementing additional monitoring and reporting procedures to detect any suspicious activity or unusual market conditions.\n5. **Coordinate with internal stakeholders**: Collaborate with internal teams, such as compliance, operations, and trading, to ensure a coordinated response and resolution.\n\n**Knowledge Base References:**\n\n* SEC Rule 204(a)(4) - Recordkeeping requirements for custodians\n* Reg BI (Regulatory Capital Requirements) - Rules governing capital requirements and risk management practices for broker-dealers\n* FINRA NASD Rule 6050 - Trading rules and regulations\n* CFTC Regulation 180 - Custody and asset protection requirements\n\nNote: This question requires the ASM support specialist to demonstrate their understanding of custody banking, trading rules, and regulatory compliance, as well as their ability to analyze complex situations and provide effective solutions.",
+    "answer": "Expected Answer:\n\nTo address this situation, I would follow these steps:\n\nCommunicate with the client: Inform the client that there was an issue with their order due to the daily trading limit for XYZ Inc. stock and explain the reason for the limitation.\nVerify the order details: Review the order submission process to ensure that all necessary documentation, including the order ticket and trade confirmation, were properly executed.\nDetermine the available options: Explore alternative execution strategies, such as:\nBreaking down the order into smaller lots, if possible.\nConsidering alternative securities or markets with less stringent trading limits.\nUsing a different custodian or broker that may have more flexible trading rules.\nComply with Reg BI: Ensure that all actions taken are in compliance with the Regulatory Capital Requirements (Reg BI). This includes:\nConducting a thorough review of the client's account activity to identify any potential conflicts of interest or undue influence.\nVerifying that the client is aware of and understands the trading limits and associated risks.\nImplementing additional monitoring and reporting procedures to detect any suspicious activity or unusual market conditions.\nCoordinate with internal stakeholders: Collaborate with internal teams, such as compliance, operations, and trading, to ensure a coordinated response and resolution.\nKnowledge Base References:\n\nSEC Rule 204(a)(4) - Recordkeeping requirements for custodians\nReg BI (Regulatory Capital Requirements) - Rules governing capital requirements and risk management practices for broker-dealers\nFINRA NASD Rule 6050 - Trading rules and regulations\nCFTC Regulation 180 - Custody and asset protection requirements\nNote: This question requires the ASM support specialist to demonstrate their understanding of custody banking, trading rules, and regulatory compliance, as well as their ability to analyze complex situations and provide effective solutions.",
+    "timestamp": "2026-02-04T08:11:31.082721"
+  },
+  {
+    "score": 7,
+    "category": "Mostly Correct",
+    "feedback": "Procedures were not specified, and potential regulatory requirements were not fully addressed.",
+    "expected_points": [
+      "Facilitate communication between the custodian and the security holder"
+    ],
+    "question": "Here is a production-level L2 ASM support question related to custody banking with medium difficulty:\n\n**Question:**\n\nWhen a security holder requests redemption of their shares held in a custodian's account, but the underlying securities are not available for immediate delivery due to market conditions, what are the procedures that the custodian should follow to facilitate the settlement process and ensure compliance with applicable regulatory requirements?\n\n**References:**\n\n* Securities Industry and Financial Markets Association (SIFMA) guidelines on custody and clearing\n* National Association of Securities Dealers (NASD) rules on securities lending and repurchase agreements\n* Federal Reserve Board regulations on bank holding company and subsidiary relationships\n\nPlease provide your response in the format requested.",
+    "answer": "Securities Industry and Financial Markets Association (SIFMA) guidelines on custody and clearing\nNational Association of Securities Dealers (NASD) rules on securities lending and repurchase agreements\nFederal Reserve Board regulations on bank holding company and subsidiary relationships",
+    "timestamp": "2026-02-04T09:18:19.013093"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "Answer could not be evaluated due to format issues.",
+    "expected_points": [],
+    "question": "Here's a production-level L2 ASM (Assembly Language) support question related to custody banking:\n\n**Question:**\n\nYou are working on a custom assembly language program to implement a basic custody banking system for a fictional bank. The system should be able to perform the following operations:\n\n* Initialize a customer account with an initial deposit\n* Deposit funds into an existing account\n* Withdraw funds from an existing account, if sufficient balance exists\n* Display the current account balance\n\nAssuming that the account numbers are stored in memory locations 1000h-107f, and the balances are stored in memory locations 1080h-10ff, implement the above operations using assembly language. The program should also handle invalid inputs (e.g., attempting to withdraw more funds than available).\n\n**Constraints:**\n\n* You must use x86-64 assembly language instructions.\n* You cannot use any external libraries or dependencies.\n* You must initialize the account balances to zero at the beginning of the program.\n\n**Hint:** You may need to use registers such as EBX, ECX, and EDX to perform arithmetic operations.\n\n**References:**\n\n* x86-64 Assembly Language Reference Manual ( chapter 3: Arithmetic Instructions)\n* x86-64 Assembly Language Reference Manual (chapter 4: Data Movement Instructions)\n\nHow would you implement the above program in assembly language?",
+    "answer": "You are working on a custom assembly language program to implement a basic custody banking system for a fictional bank. The system should be able to perform the following operations:\n\nInitialize a customer account with an initial deposit\nDeposit funds into an existing account\nWithdraw funds from an existing account, if sufficient balance exists\nDisplay the current account balance",
+    "timestamp": "2026-02-04T09:20:14.484545"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Followed correct troubleshooting process and applied relevant knowledge base article.",
+    "expected_points": [
+      "Verified lockbox facility's authentication process",
+      "Checked client's login credentials for errors",
+      "Contacted bank's support team to resolve issue with invalid login credentials"
+    ],
+    "question": "Here is a production-level L2 ASM support question related to custody banking:\n\n**Question:**\n\nA client's custodial account has been transferred from a broker-dealer to a direct custody arrangement with a bank. However, the client's investment positions are currently held in a \"lockbox\" facility that uses an electronic token system for authentication.\n\nWhen the client initiates a trade request using their online account portal, they receive an error message indicating that their trading privileges have been suspended due to \"invalid login credentials\". The client is unable to access their account or place trades until this issue is resolved.\n\n**Relevant Knowledge Base:**\n\n* Referencing KB#123456 - \"Error Handling for Electronic Token System\"\n* Reviewing the documentation for the lockbox facility's authentication process\n* Understanding the bank's procedures for verifying custodial account ownership and authorizing trading activities\n\n**Required Solution:**\n\nProvide a step-by-step solution to resolve the client's issue, including any necessary troubleshooting or technical workarounds. The solution should be concise and easy to follow.\n\nPlease provide your response in the following format:\n\n[Step 1] - Brief description of the solution\n[Step 2] - Detailed explanation of the solution\n...",
+    "answer": "Provide a step-by-step solution to resolve the client's issue, including any necessary troubleshooting or technical workarounds. The solution should be concise and easy to follow.\n\nPlease provide your response in the following format:\n\n[Step 1] - Brief description of the solution [Step 2] - Detailed explanation of the solution ...",
+    "timestamp": "2026-02-04T12:06:23.071699"
+  },
+  {
+    "score": 8,
+    "category": "Mostly Correct",
+    "feedback": "To rectify the situation, the custodian should first correct the sub-account transfer by transferring the incorrectly credited 5 shares back to the customer's sub-account. Then, they should immediately cancel the incorrect transaction with the other client's sub-account and initiate a new transaction to transfer the 5 shares from the other client's sub-account to the customer's sub-account. Additionally, the custodian should verify that all cash received by the customer has been correctly credited to their holding account. This ensures that the customer receives their correct share count and cash balance.",
+    "expected_points": [
+      "Correctly identify the error",
+      "Initiate corrective action for shares",
+      "Cancel incorrect transaction",
+      "Verify cash crediting",
+      "Completely rectify the situation"
+    ],
+    "question": "Here is a production L2 ASM support question related to custody banking with medium difficulty:\n\n**Question:**\n\nA customer has placed an order to buy 100 shares of XYZ Inc., which was executed on April 1st, 2023. The transaction details are as follows:\n\n* Share price at the time of execution: $50.00\n* Order type: Market order\n* Settlement date: April 5th, 2023\n\nThe customer's account is held in a custody arrangement where the securities are held in a sub-account and the cash is held in a separate holding account. The settlement process involves two steps: first, the shares are transferred to the customer's sub-account, and then the cash is credited to the corresponding holding account.\n\nHowever, during the settlement process, it is discovered that there was an error in the sub-account transfer, resulting in 5 shares being incorrectly credited to a different client's sub-account. As a result, the customer's actual share count is now 95 shares instead of 100 shares.\n\n**What steps should be taken by the custodian to rectify this situation and ensure that the customer receives their correct share count and cash balance?**\n\n( Please note that this question requires a descriptive answer and demonstrates the ability to apply knowledge of custody banking processes and procedures to resolve a complex issue. )",
+    "answer": "The customer's account is held in a custody arrangement where the securities are held in a sub-account and the cash is held in a separate holding account. The settlement process involves two steps: first, the shares are transferred to the customer's sub-account, and then the cash is credited to the corresponding holding account.\n\nHowever, during the settlement process, it is discovered that there was an error in the sub-account transfer, resulting in 5 shares being incorrectly credited to a different client's sub-account. As a result, the customer's actual share count is now 95 shares instead of 100 shares.\n\nWhat steps should be taken by the custodian to rectify this situation and ensure that the customer receives their correct share count and cash balance?\n\n( Please note that this question requires a descriptive answer and demonstrates the ability to apply knowledge of custody banking processes and procedures to resolve a complex issue. )",
+    "timestamp": "2026-02-04T12:49:53.733636"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "The relevant regulations require separate accounts for each client, including transfers from predecessor custodians. A single account cannot meet these segregation requirements.",
+    "expected_points": [
+      "Segregation of cash balances",
+      "Separate accounts for each client"
+    ],
+    "question": "Here's a production L2 ASM support question related to custody banking with medium difficulty:\n\n**Question:**\n\nA custodian is required to segregate and hold cash balances in separate accounts for two distinct clients, A and B. The segregation criteria are as follows:\n\n* Client A has a cash balance of $100,000, which includes $20,000 that has been transferred from a predecessor custodian.\n* Client B has a cash balance of $50,000.\n\nThe custodian wants to use a single custodial account to hold both clients' cash balances. However, the account cannot be used for any other purpose.\n\nWhat is the minimum number of separate accounts required by the custodian to meet the segregation requirements under the relevant regulations?\n\n**A)** 1\n**B)** 2\n**C)** 3\n**D)** 4\n\n**Knowledge Hub Reference:**\n\n* The relevant regulations, such as the SEC's Custody Rule (17 CFR 255.155), require custodians to segregate cash balances for each client in separate accounts.\n* The segregation criteria include separating cash balances from other assets, including transfers from predecessor custodians.\n\n**Difficulty Level:** Medium",
+    "answer": "Option A is the Answer",
+    "timestamp": "2026-02-04T13:29:39.439683"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "Answer could not be evaluated due to format issues.",
+    "expected_points": [],
+    "question": "Here's a production-level L2 ASM (Assembly Language) support question related to custody banking:\n\n**Question**\n\nYou are writing an Assembly Language program to implement a simple custody banking system. The system has three types of accounts: Checking, Savings, and Certificates of Deposit (CDs). Each account type has its own interest rate and fees associated with it.\n\nWrite an ASM program that performs the following operations:\n\n1. Create a new checking account with an initial balance of $1000.\n2. Deposit $500 into the checking account.\n3. Calculate and display the current balance in the checking account.\n4. Withdraw $200 from the checking account.\n5. Check if the checking account has sufficient funds to cover a withdrawal of $300.\n6. If the account does not have sufficient funds, print an error message indicating that the withdrawal is declined.\n\n**Constraints**\n\n* Use only 16-bit Assembly Language (x86 or x64).\n* Assume a 32-bit operating system.\n* Use a compiler that supports 16-bit Assembly Language programming.\n* Do not use any external libraries or dependencies.\n\n**Requirements**\n\n* The program should be able to handle errors and exceptions properly.\n* The program should display the current balance in the checking account after each transaction.\n* The program should indicate if a withdrawal is declined due to insufficient funds.\n\n**Sample Data Structures (in C-like syntax)**\n\n```c\ntypedef struct {\n    char account_number[10];\n    int account_type;  // 1: Checking, 2: Savings, 3: CDs\n    float balance;\n} Account;\n\n// Interest rates and fees for each account type\n#define CHECKING_INTEREST_RATE 0.05\n#define SAVINGS_INTEREST_RATE 0.02\n#define CD_INTEREST_RATE 0.10\n\n#define CHECKING_FEE 5\n#define SAVINGS_FEE 2\n#define CD_FEE 10\n```\n\n**Your Task**\n\nWrite the ASM program to perform the above operations and display the results. Good luck!",
+    "answer": "// Interest rates and fees for each account type\n#define CHECKING_INTEREST_RATE 0.05\n#define SAVINGS_INTEREST_RATE 0.02\n#define CD_INTEREST_RATE 0.10\n\n#define CHECKING_FEE 5\n#define SAVINGS_FEE 2\n#define CD_FEE 10",
+    "timestamp": "2026-02-04T14:49:31.047111"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "Answer could not be evaluated due to format issues.",
+    "expected_points": [],
+    "question": "Here's a production-level L2 ASM (Assembly) support question related to custody banking with medium difficulty:\n\n**Question:** \n\nYou are responsible for implementing a new functionality in an existing system that manages securities holdings in a custody bank. The system currently uses a combination of cash and securities accounts to manage client assets.\n\nThe requirement is to add a new feature that allows for the transfer of securities from one account holder to another within the same custodian bank, without involving any intermediaries or external clearinghouses. This transfer should be done using an automated batch process.\n\n**Your task:**\n\nImplement the necessary ASM code to achieve this functionality in an existing system. The system uses the following variables and data structures:\n\n*   `CUST_BANK_ID`: a unique identifier for each custodian bank\n*   `SECURITY_ID`: a unique identifier for each security held by the custodian bank\n*   `ACCOUNT_holder_ID`: a unique identifier for each account holder within a custodian bank\n*   `SECURITIES_ACCOUNT`: a data structure that stores information about securities accounts, including security ID, account holder ID, and balance\n\n**Constraints:**\n\n1.  The transfer should be done in batches, where a batch consists of multiple transactions between the same two parties.\n2.  Each transaction should be recorded in a separate record within the `SECURITIES_ACCOUNT` data structure.\n3.  The system should prevent transfers that would result in an account holder having a negative balance.\n\n**Hint:**\n\nYou may want to consider using arrays or linked lists to efficiently manage the batches and transactions. You can also use arithmetic operations to calculate the new balances for both parties involved.\n\nHere's some sample ASM code to get you started:\n\n```asm\nMOV AH, 0Fh ; set up batch transfer parameters\n\n; loop through each transaction in the current batch\nLOOP_BATCH Transection\n    MOV AX, [Transection] ; load address of next transaction\n    ADD AX, 4 ; increment by size of record (assuming 4 bytes per transaction)\n\nLOOP_END:\n```\n\n**Your task is to fill in the missing code to complete this functionality.**\n\nNote: This question requires you to implement the ASM code using Assembly language and assumes that you have a basic understanding of data structures, variables, and control flow statements in Assembly language.\n\nLet me know if you want me to give away the answer or provide more hints!",
+    "answer": "Constraints:\n\nThe transfer should be done in batches, where a batch consists of multiple transactions between the same two parties.\nEach transaction should be recorded in a separate record within the SECURITIES_ACCOUNT data structure.\nThe system should prevent transfers that would result in an account holder having a negative balance.",
+    "timestamp": "2026-02-04T14:52:35.370458"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Detailed explanation of regulatory compliance, operational feasibility, and risk management implications.",
+    "expected_points": [
+      "Compliance with EMIR and MiFID II regulations through proper documentation and notification to relevant authorities.",
+      "Operational planning to ensure timely and accurate transfer, including stress testing for potential liquidity risks.",
+      "Risk management measures to mitigate credit risks and operational risks, such as verifying client's KYC information and implementing robust controls."
+    ],
+    "question": "Here's a production-level L2 ASM support question related to custody banking with medium difficulty:\n\n**Question:**\n\nA client has an investment portfolio held in a custodian account, and the portfolio includes a mix of equities, fixed income securities, and commodities. The client requests that the custodian bank transfer $100,000 from one brokerage account to another within the same custodian account, but with different settlement dates (T+2 for the first transfer and T+5 for the second transfer). Additionally, the client wants the custodian bank to apply a portion of the transferred funds to a specific bond instrument held in the portfolio, which has an outstanding balance of $50,000.\n\nHow would you ensure compliance with applicable regulations, such as EMIR, MiFID II, and regulatory capital requirements, while also considering the operational feasibility and risk management implications of this transfer?\n\n**Expected Answer:**\n\nA clear and concise answer should address the following key aspects:\n\n1. **Compliance with regulations**: Explain how the custodian bank will ensure compliance with EMIR, MiFID II, and other relevant regulations, such as AML/KYC requirements.\n2. **Operational feasibility**: Describe the steps taken to ensure that the transfer is operationally feasible, including any necessary risk management measures.\n3. **Risk management implications**: Discuss how the custodian bank will manage potential risks associated with this transfer, such as liquidity risks, credit risks, and operational risks.\n\n**Example Answer:**\n\nTo address the client's request, we would follow these steps:\n\n1. Review regulatory requirements: Ensure compliance with EMIR, MiFID II, and other relevant regulations by verifying the settlement dates, transfer amounts, and application of funds to specific instruments.\n2. Operational planning: Develop an operational plan to ensure a smooth transfer process, including risk management measures such as:\n\t* Liquidity risks: Monitor the client's liquidity position and adjust the transfer schedule accordingly.\n\t* Credit risks: Verify the creditworthiness of the client's counterparties and apply stress testing to identify potential vulnerabilities.\n\t* Operational risks: Implement robust controls to prevent errors or system failures during the transfer process.\n3. Risk management implications: Consider the potential risk implications of this transfer, including:\n\t* Market volatility: Monitor market conditions to ensure that the transfer does not expose the client's portfolio to excessive market risks.\n\t* Counterparty risks: Verify the creditworthiness of all counterparties involved in the transfer and apply stress testing to identify potential vulnerabilities.\n\nBy following these steps and considering regulatory requirements, operational feasibility, and risk management implications, we can ensure a compliant and successful transfer for the client.",
+    "answer": "A client has an investment portfolio held in a custodian account, and the portfolio includes a mix of equities, fixed income securities, and commodities. The client requests that the custodian bank transfer $100,000 from one brokerage account to another within the same custodian account, but with different settlement dates (T+2 for the first transfer and T+5 for the second transfer). Additionally, the client wants the custodian bank to apply a portion of the transferred funds to a specific bond instrument held in the portfolio, which has an outstanding balance of $50,000.\n\nHow would you ensure compliance with applicable regulations, such as EMIR, MiFID II, and regulatory capital requirements, while also considering the operational feasibility and risk management implications of this transfer?\n\nExpected Answer:\n\nA clear and concise answer should address the following key aspects:\n\nCompliance with regulations: Explain how the custodian bank will ensure compliance with EMIR, MiFID II, and other relevant regulations, such as AML/KYC requirements.\nOperational feasibility: Describe the steps taken to ensure that the transfer is operationally feasible, including any necessary risk management measures.\nRisk management implications: Discuss how the custodian bank will manage potential risks associated with this transfer, such as liquidity risks, credit risks, and operational risks.",
+    "timestamp": "2026-02-04T14:59:39.512557"
+  },
+  {
+    "score": 2,
+    "category": "Incorrect",
+    "feedback": "Frontend server logs are not checked for out-of-memory issues. Action should also include identifying the root cause of the issue.",
+    "expected_points": [
+      "Check frontend server logs",
+      "Recycle server in Autosys JCI"
+    ],
+    "question": "You are the system administrator of State Street Corporation's Poststrasse application, which sends requested reports in AFP/SWIFT format to DB Print for printing. Suddenly, you notice that the server is experiencing an out-of-memory issue. What action would you take to resolve this issue?",
+    "answer": "I would take a look into frontend server logs and verify if we have any out of memory issue and recycle that server in autosys JCI",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-04T15:44:39.818137"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "The action taken does not address the out-of-memory issue. The correct action would be to login to Autosys JCI and recycle the server to fix the issue.",
+    "expected_points": [
+      "Recycle the server via Autosys JCI",
+      "Address the root cause of the out-of-memory issue"
+    ],
+    "question": "You are the system administrator of State Street Corporation's Poststrasse application, which sends requested reports in AFP/SWIFT format to DB Print for printing. Suddenly, you notice that the server is experiencing an out-of-memory issue. What action would you take to resolve this issue?",
+    "answer": "The Poststrasse Front End application is an online application with a web client that allows its users to deal with Link (Unique combination of Fund, Address and Report Type) and Queue (Links in processing state). Whenever any user wants any specific report of a particular fund to be mailed to his/her address, he/she can create a Link using the requested Fund, Report type and his/her address. User can view the status of execution of any report type; he/she has requested for and can also update the schedules of his/her report as per their requirements. \nThe Poststrasse Back End application is a set of daily, monthly, quarterly and yearly batch processing programs that executes as per the schedule set by the users. Its users schedule the reports (using PS Front end) at any specified time and back end invokes different handlers to execute it at the scheduled time. Currently Poststrasse is creating 7 different types reports in AFP format.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-04T15:45:42.250397"
+  },
+  {
+    "score": 8,
+    "category": "Mostly Correct",
+    "feedback": "Correct action would also include checking server logs for any other issues, but recycling the server fixes the out-of-memory issue. Ensure this process is documented for future reference.",
+    "expected_points": [
+      "recycling the server",
+      "Autosys JCI"
+    ],
+    "question": "You are the system administrator of State Street Corporation's Poststrasse application, which sends requested reports in AFP/SWIFT format to DB Print for printing. Suddenly, you notice that the server is experiencing an out-of-memory issue. What action would you take to resolve this issue?",
+    "answer": "I will check for out of memory issue and login to Autosys JCI and recycle the server to fix the issue",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-04T15:46:22.184884"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Correctly defined corporate actions as events that affect securities and have a significant impact on stakeholders.",
+    "expected_points": [
+      "Define",
+      "Corporate Actions",
+      "impact",
+      "stakeholders"
+    ],
+    "question": "As a corporate actions custodian, what is the primary goal of navigating corporate actions events such as mergers and acquisitions, or changes in dividend policies?",
+    "answer": "Corporate Actions and the Role of Custodians in Navigating Them\nCorporate Actions: Understanding Their Impact and Role of Custodians\nCorporate actions refer to events or decisions made by a company that affect its securities (stocks, bonds, etc.) and can have a significant impact on shareholders, bondholders, and other stakeholders. These actions are typically carried out by the company\u2019s board of directors or management and can result in changes to the company\u2019s structure, financial standing, or distribution of profits.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-04T16:14:05.879390"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "A custodian's primary role is not just to store custody files. They play a crucial part in navigating corporate actions that affect securities and impacting shareholders, bondholders, and other stakeholders.",
+    "expected_points": [
+      "Role of Custodians",
+      "Corporate Actions"
+    ],
+    "question": "What is the role of a custodian bank in relation to corporate actions, and how does it impact stakeholders?",
+    "answer": "To store the custody files",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-04T16:48:19.009092"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "The primary goal of incident management is not solely to resolve issues in an ITSM tool. It aims to restore normal service operation as quickly as possible while minimizing the impact on business functions.",
+    "expected_points": [
+      "Identify",
+      "minimize",
+      "business"
+    ],
+    "question": "What is the primary goal of the Incident Management process, particularly in IT Service Management (ITSM) and workplace safety?",
+    "answer": "To resolve the issue in ITSM tool",
+    "topic": "Incident Management",
+    "timestamp": "2026-02-04T17:11:50.314979"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Correctly stated the primary goal of incident management as restoring normal service operation quickly while minimizing impact on business functions.",
+    "expected_points": [
+      "Knowledge of Incident Management process",
+      "Primary goal of Incident Management"
+    ],
+    "question": "What is the primary goal of an Incident Management process, which is used to handle unexpected events or disruptions?",
+    "answer": "Incident management is a structured process for identifying, analyzing, and resolving incidents to minimize disruption and maintain service quality within an organization.\nDefinition and Purpose\nIncident management refers to the systematic approach used to handle unexpected events or disruptions that can impact an organization's operations. The primary goal is to restore normal service operation as quickly as possible while minimizing the impact on business functions. This process is crucial in various fields, particularly in IT service management (ITSM) and workplace safety. \n",
+    "topic": "Incident Management",
+    "timestamp": "2026-02-04T19:26:03.632241"
+  },
+  {
+    "score": 10,
+    "category": "Excellent",
+    "feedback": "The answer accurately reflects the primary goal of Incident Management in ITSM and workplace safety.",
+    "expected_points": [
+      "Definition",
+      "Incident Management process"
+    ],
+    "question": "What is the primary goal of the Incident Management process, particularly in IT service management (ITSM) and workplace safety?",
+    "answer": "Incident management is a structured process for identifying, analyzing, and resolving incidents to minimize disruption and maintain service quality within an organization.\nDefinition and Purpose\nIncident management refers to the systematic approach used to handle unexpected events or disruptions that can impact an organization's operations. The primary goal is to restore normal service operation as quickly as possible while minimizing the impact on business functions. This process is crucial in various fields, particularly in IT service management (ITSM) and workplace safety. \n",
+    "topic": "Incident Management",
+    "timestamp": "2026-02-05T03:56:39.272750"
+  },
+  {
+    "score": 10,
+    "category": "Excellent",
+    "feedback": "The response accurately states the primary goal of Incident Management as defined in IT service management (ITSM).",
+    "expected_points": [
+      "Identify",
+      "analyze",
+      "resolve",
+      "minimize disruption",
+      "maintain service quality"
+    ],
+    "question": "What is the primary goal of Incident Management, as defined in IT service management (ITSM)?",
+    "answer": "Incident management is a structured process for identifying, analyzing, and resolving incidents to minimize disruption and maintain service quality within an organization.\nDefinition and Purpose\nIncident management refers to the systematic approach used to handle unexpected events or disruptions that can impact an organization's operations. The primary goal is to restore normal service operation as quickly as possible while minimizing the impact on business functions. This process is crucial in various fields, particularly in IT service management (ITSM) and workplace safety. \n",
+    "topic": "Incident Management",
+    "timestamp": "2026-02-05T04:45:10.767050"
+  }
+]
