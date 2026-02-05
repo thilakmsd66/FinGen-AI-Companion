@@ -1,7 +1,7 @@
 from google import genai
 
 # TEMPORARY: paste key directly
-API_KEY = "AIzaSyBc__6Dmy4GF6RcCs0ArBI9jYUetxvW2oY"  # <-- paste FULL key here
+API_KEY = "your_google_api_key_here"  # <-- paste FULL key here
 
 client = genai.Client(api_key=API_KEY)
 
