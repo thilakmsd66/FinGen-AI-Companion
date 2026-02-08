@@ -20,7 +20,8 @@ Whether you're learning about custody banking, fund management, asset custody, o
 - Real-time financial queries answered by advanced language models
 - Context-aware responses using RAG (Retrieval-Augmented Generation)
 - Multi-turn conversation support
-- Integration with Google Gemini and OpenAI APIs
+- Integration with Google Gemini, OpenAI APIs, and Ollama (local LLMs)
+- Offline capability with Ollama for privacy-first deployments
 
 ### 📖 **Knowledge Hub**
 - Curated financial documents and educational resources
@@ -54,7 +55,8 @@ Whether you're learning about custody banking, fund management, asset custody, o
 - **Framework**: FastAPI (Python)
 - **Server**: Uvicorn
 - **Database**: JSON-based storage (scalable to SQL)
-- **AI/LLM**: Google Gemini, OpenAI GPT
+- **AI/LLM**: Google Gemini, OpenAI GPT, and Ollama (local LLMs)
+- **RAG Engine**: Custom Retrieval-Augmented Generation implementation
 - **Authentication**: JWT tokens
 - **Email**: SMTP for password reset
 
@@ -187,7 +189,113 @@ fingen-app/
 
 ---
 
-## 📚 API Documentation
+## � Advanced Features Explained
+
+### **RAG (Retrieval-Augmented Generation)**
+
+RAG is a powerful AI technique that combines document retrieval with language generation to provide accurate, contextual answers backed by actual data.
+
+#### How RAG Works in FinGen:
+
+1. **Document Indexing**: Financial documents are processed and indexed using embeddings
+2. **Query Processing**: When a user asks a question, the query is converted to embeddings
+3. **Retrieval**: The most relevant documents are retrieved from the knowledge base
+4. **Generation**: The LLM generates a response using both the query and retrieved documents
+5. **Answer**: User gets an answer grounded in actual financial data, not just LLM hallucinations
+
+#### Benefits:
+- ✅ **Accuracy**: Answers are backed by actual documents
+- ✅ **Transparency**: Users can see sources of information
+- ✅ **Reduced Hallucination**: LLM references real data
+- ✅ **Custom Knowledge**: Can add domain-specific documents
+- ✅ **Up-to-date**: Knowledge base can be updated without retraining
+
+#### Implementation in FinGen:
+```
+User Query → Embedding → Document Retrieval → Context + Query → LLM → Grounded Answer
+                              ↓
+                     Knowledge Base (PDFs, TXTs)
+```
+
+---
+
+### **Ollama - Local LLM Integration**
+
+Ollama is an open-source framework that allows running large language models locally without cloud APIs, providing privacy, cost savings, and offline capabilities.
+
+#### Supported Models:
+- **Llama 2** - Meta's open-source LLM, excellent for general tasks
+- **Mistral** - Lightweight, fast model for quick responses
+- **Neural Chat** - Optimized for conversational AI
+- **Orca** - Small but powerful model
+- **Vicuna** - Fine-tuned for instruction following
+
+#### Advantages of Using Ollama:
+
+| Feature | Cloud LLM | Ollama (Local) |
+|---------|-----------|----------------|
+| **Privacy** | Data sent to cloud | Data stays local |
+| **Cost** | Pay per API call | One-time download |
+| **Latency** | Network dependent | Sub-second local |
+| **Offline** | Requires internet | Works offline |
+| **Customization** | Limited | Full control |
+| **Compliance** | Regulatory concerns | HIPAA, GDPR friendly |
+
+#### Setting Up Ollama with FinGen:
+
+1. **Install Ollama**: Download from https://ollama.ai
+2. **Pull a Model**:
+   ```bash
+   ollama pull llama2
+   # or
+   ollama pull mistral
+   ```
+
+3. **Run Ollama Server**:
+   ```bash
+   ollama serve
+   # Listens on http://localhost:11434
+   ```
+
+4. **Configure FinGen Backend**:
+   ```python
+   # backend/ai/llm.py
+   from ollama import Client
+   
+   client = Client(host='http://localhost:11434')
+   response = client.generate(
+       model='llama2',
+       prompt='What is custody banking?'
+   )
+   ```
+
+5. **Use in Chatbot**:
+   The chatbot automatically detects and uses Ollama when available, falling back to cloud APIs if needed.
+
+#### RAG + Ollama Pipeline:
+
+```
+User Input
+    ↓
+Document Retrieval (RAG)
+    ↓
+Context Building
+    ↓
+Ollama Local Model
+    ↓
+Financial Answer (Private, Fast, Accurate)
+```
+
+#### Use Cases:
+- 🏦 **Banks**: Comply with data residency requirements
+- 🏥 **Healthcare**: HIPAA-compliant financial guidance
+- 🔒 **Government**: Restricted data handling
+- 📱 **Offline Learning**: Mobile app without internet
+- 💰 **Cost Optimization**: No API charges
+
+---
+
+## �📚 API Documentation
 
 ### Authentication Endpoints
 - `POST /api/auth/register` - User registration
@@ -247,18 +355,62 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 ## 📖 Usage Examples
 
-### Using the Chatbot
+### Using the Chatbot with Cloud LLMs
 ```javascript
-// Example: Ask financial question
+// Example: Ask financial question using OpenAI/Gemini
 const response = await fetch('http://localhost:8000/api/chat', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
-    message: 'What is custody banking?'
+    message: 'What is custody banking?',
+    model: 'openai' // or 'gemini'
   })
 });
 const data = await response.json();
 console.log(data.response);
+```
+
+### Using the Chatbot with Ollama (Local)
+```javascript
+// Example: Ask financial question using local Ollama model
+const response = await fetch('http://localhost:8000/api/chat', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    message: 'What is custody banking?',
+    model: 'ollama', // Uses local Ollama
+    model_name: 'llama2' // Specific Ollama model
+  })
+});
+const data = await response.json();
+console.log(data.response);
+```
+
+### RAG-Enhanced Response
+```python
+# Backend example: RAG implementation
+from backend.knowledge.retriever import retrieve_documents
+from backend.ai.llm import generate_response
+
+# User question
+query = "What are the risks in asset custody?"
+
+# Step 1: Retrieve relevant documents
+documents = retrieve_documents(query, top_k=3)
+
+# Step 2: Build context
+context = "\n".join([doc['content'] for doc in documents])
+
+# Step 3: Generate grounded answer
+response = generate_response(
+    query=query,
+    context=context,
+    model='ollama',  # or 'openai', 'gemini'
+)
+
+# Response includes source documents
+print(f"Answer: {response['answer']}")
+print(f"Sources: {response['sources']}")
 ```
 
 ### Uploading Documents
