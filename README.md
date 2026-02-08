@@ -478,7 +478,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Thilak L**
 - Email: thilakmsd66@gmail.com
 - GitHub: [@thilakmsd66](https://github.com/thilakmsd66)
-- LinkedIn: [Thilak L](https://linkedin.com/in/thilak)
+- LinkedIn: [Thilak L](www.linkedin.com/in/thilak-suvarna-a8b6411b6)
 
 ---
 
