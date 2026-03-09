@@ -104,7 +104,7 @@ const Home = () => {
         <Box mt={3} display="flex" gap={1} flexWrap="wrap">
           <Chip icon={<SchoolIcon />} label="Knowledge Hub" color="primary" />
           <Chip icon={<ChatIcon />} label="AI Chat" color="success" />
-          <Chip icon={<MapIcon />} label="RoadMap" color="success" />
+          <Chip icon={<MapIcon />} label="RoadMap" color="info" />
           <Chip icon={<AssignmentIcon />} label="Assessments" color="warning" />
           <Chip icon={<BarChartIcon />} label="Analytics" color="secondary" />
         </Box>
