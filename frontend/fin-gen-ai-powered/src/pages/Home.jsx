@@ -13,6 +13,10 @@ import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import SchoolIcon from "@mui/icons-material/School";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import MapIcon from "@mui/icons-material/Map";
+import ChatIcon from "@mui/icons-material/Chat";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import BarChartIcon from "@mui/icons-material/BarChart";
 import axios from "axios";
 
 /* =========================
@@ -98,10 +102,11 @@ const Home = () => {
         </Typography>
 
         <Box mt={3} display="flex" gap={1} flexWrap="wrap">
-          <Chip label="📚 Knowledge Hub" color="primary" />
-          <Chip label="🤖 AI Chat" color="success" />
-          <Chip label="📝 Assessments" color="warning" />
-          <Chip label="📊 Analytics" color="secondary" />
+          <Chip icon={<SchoolIcon />} label="Knowledge Hub" color="primary" />
+          <Chip icon={<ChatIcon />} label="AI Chat" color="success" />
+          <Chip icon={<MapIcon />} label="RoadMap" color="success" />
+          <Chip icon={<AssignmentIcon />} label="Assessments" color="warning" />
+          <Chip icon={<BarChartIcon />} label="Analytics" color="secondary" />
         </Box>
       </Paper>
 
