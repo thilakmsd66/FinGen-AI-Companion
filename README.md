@@ -20,7 +20,7 @@ Whether you're learning about custody banking, fund management, asset custody, o
 - Real-time financial queries answered by advanced language models
 - Context-aware responses using RAG (Retrieval-Augmented Generation)
 - Multi-turn conversation support
-- Integration with Google Gemini, OpenAI APIs, and Ollama (local LLMs)
+- Uses Ollama for local LLM inference (no external API required)
 - Offline capability with Ollama for privacy-first deployments
 
 ### 📖 **Knowledge Hub**
@@ -55,7 +55,7 @@ Whether you're learning about custody banking, fund management, asset custody, o
 - **Framework**: FastAPI (Python)
 - **Server**: Uvicorn
 - **Database**: JSON-based storage (scalable to SQL)
-- **AI/LLM**: Google Gemini, OpenAI GPT, and Ollama (local LLMs)
+- **AI/LLM**: Ollama (local LLMs)
 - **RAG Engine**: Custom Retrieval-Augmented Generation implementation
 - **Authentication**: JWT tokens
 - **Email**: SMTP for password reset
@@ -151,9 +151,7 @@ fingen-app/
 
 4. **Configure environment variables:**
    ```bash
-   # Create .env file with:
-   OPENAI_API_KEY=your_openai_api_key_here
-   GOOGLE_API_KEY=your_google_api_key_here
+   # Create .env file if needed. Ollama runs locally and typically doesn't require an API key.
    ```
 
 5. **Run the backend:**
