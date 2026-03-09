@@ -94,6 +94,10 @@ const Navbar = () => {
               Knowledge Hub
             </Button>
 
+            <Button color="inherit" onClick={() => navigate("/roadmap")}>
+  Roadmap
+</Button>
+
             <Button color="inherit" onClick={() => navigate("/chatbot")}>
               Chatbot
             </Button>

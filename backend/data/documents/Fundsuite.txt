@@ -1,4 +1,0 @@
-Fundsuite is an application under cross products in statestreet.
-Its used for dataloads into the application
-We upload data and create statements for those data.
-Tools that are being used are: FundsuiteSX application using remotedesktop

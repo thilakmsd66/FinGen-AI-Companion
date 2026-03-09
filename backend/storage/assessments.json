@@ -558,5 +558,44 @@
     "answer": "Incident management is a structured process for identifying, analyzing, and resolving incidents to minimize disruption and maintain service quality within an organization.\nDefinition and Purpose\nIncident management refers to the systematic approach used to handle unexpected events or disruptions that can impact an organization's operations. The primary goal is to restore normal service operation as quickly as possible while minimizing the impact on business functions. This process is crucial in various fields, particularly in IT service management (ITSM) and workplace safety. \n",
     "topic": "Incident Management",
     "timestamp": "2026-02-05T04:45:10.767050"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Custodians monitor and respond to changes in control by adjusting the custody position on the account, updating security holdings, and ensuring compliance with regulatory requirements.",
+    "expected_points": [
+      "Corporate Actions",
+      "Role of Custodians"
+    ],
+    "question": "A company announces that it is undergoing a merger with another company, resulting in a change of control of its stock. The custodian's role in this corporate action is to _______________________.",
+    "answer": "A company announces that it is undergoing a merger with another company, resulting in a change of control of its stock. The custodian's role in this corporate action",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-25T16:00:32.041872"
+  },
+  {
+    "score": 6,
+    "category": "Partially Correct",
+    "feedback": "A custodian plays a crucial role in holding and safeguarding customers' securities, but its primary function is not specifically handling corporate actions.",
+    "expected_points": [
+      "safekeeping of securities",
+      "categorization of correct answer as incorrect or missing"
+    ],
+    "question": "What is the role of a custodian in handling corporate actions, and how does it impact shareholders and stakeholders?",
+    "answer": "Safekeeping of securities, managing corporate actions.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-02-25T18:08:33.623815"
+  },
+  {
+    "score": 9,
+    "category": "Excellent",
+    "feedback": "Correctly stated the main goal of incident management. Although incident management is primarily about addressing immediate issues, it's also important to note that long-term safety and asset protection are crucial for a custodian bank like State Street.",
+    "expected_points": [
+      "Incident Management Process",
+      "Restoring normal service operation"
+    ],
+    "question": "A custodian bank's primary function is to hold and safeguard customers' securities, including stocks, bonds, and other assets. What is the main goal of incident management, which is often implemented by a company like State Street Bank?",
+    "answer": "While a custodian bank like State Street focuses on the long-term safety of assets, their Incident Management process is all about the \"here and now.\"\n\nThe primary goal of Incident Management is to restore normal service operation as quickly as possible while minimizing the adverse impact on business operations.\n\nIn the context of a global financial institution, \"normal service\" means that critical trading platforms, settlement systems, and reporting tools are functioning within their agreed-upon service levels (SLAs).",
+    "topic": "Incident Management",
+    "timestamp": "2026-03-01T19:54:40.691914"
   }
 ]

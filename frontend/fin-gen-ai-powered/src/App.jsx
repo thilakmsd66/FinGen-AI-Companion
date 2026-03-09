@@ -13,6 +13,7 @@ import Chatbot from "./pages/Chatbot";
 import Assessment from "./pages/Assessment";
 import Profile from "./pages/Profile";
 import Footer from "./components/Footer";
+import Roadmap from "./pages/RoadMap";
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
           path="/knowledgehub"
           element={user ? <KnowledgeHub /> : <Navigate to="/login" />}
         />
-
+        <Route path="/roadmap" element={<Roadmap />} />
         <Route
           path="/chatbot"
           element={user ? <Chatbot /> : <Navigate to="/login" />}
