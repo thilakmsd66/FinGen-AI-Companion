@@ -597,5 +597,96 @@
     "answer": "While a custodian bank like State Street focuses on the long-term safety of assets, their Incident Management process is all about the \"here and now.\"\n\nThe primary goal of Incident Management is to restore normal service operation as quickly as possible while minimizing the adverse impact on business operations.\n\nIn the context of a global financial institution, \"normal service\" means that critical trading platforms, settlement systems, and reporting tools are functioning within their agreed-upon service levels (SLAs).",
     "topic": "Incident Management",
     "timestamp": "2026-03-01T19:54:40.691914"
+  },
+  {
+    "score": 4,
+    "category": "Partially Correct",
+    "feedback": "The role of the transfer agent is more nuanced. While transfer agents are responsible for transferring securities, they are not solely responsible for ensuring the smooth transfer of securities in all corporate action scenarios. Custodians and transfer agents often work together in this process.",
+    "expected_points": [
+      "Transfer Agent",
+      "Custodians"
+    ],
+    "question": "When a company undergoes a corporate action, which of the following roles is primarily responsible for ensuring the smooth transfer of securities to affected stakeholders?",
+    "answer": "Any corporate action that involves a stock exchange requires a transfer agent, even if you don't currently have one. If two companies are involved, either company's transfer agent can be chosen to handle the corporate action.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-03-13T14:34:59.331905"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "A custodian may be involved in corporate actions, but it is not the primary goal of incident management. Incident management is a process to handle unexpected events or disruptions to minimize disruption and maintain service quality. A custodian's role may be involved in corporate actions, but this is not the primary goal of incident management.",
+    "expected_points": [
+      "Corporate actions involve a company's securities",
+      "Custodians are banks or financial institutions holding securities"
+    ],
+    "question": "What is the primary goal of incident management in an organization, and how does it relate to the role of a custodian in corporate actions?",
+    "answer": "Any corporate action that involves a stock exchange requires a transfer agent, even if you don't currently have one. If two companies are involved, either company's transfer agent can be chosen to handle the corporate action.\n",
+    "topic": "Cash",
+    "timestamp": "2026-03-13T14:56:23.350587"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "This answer focuses on regulatory compliance, but the primary responsibility as a custodian in this scenario is to ensure the smooth transfer of securities as a result of the stock split.",
+    "expected_points": [
+      "Ensuring accurate and timely processing of securities",
+      "Maintaining record-keeping of the stock split event"
+    ],
+    "question": "A company announces a 2-for-1 stock split. As the custodian for this company's securities, what is your primary responsibility in relation to this corporate action?",
+    "answer": "Ensuring Compliance: Adhering to the legal and regulatory requirements under the Companies Act and SEBI (LODR) Regulations, including obtaining shareholder approval and filing necessary documents with the Registrar of Companies.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-03-13T14:58:02.161970"
+  },
+  {
+    "score": 9,
+    "category": "Mostly Correct",
+    "feedback": "The correct role of the custodian bank in a stock split is primarily to update share records, issue new share certificates, and inform shareholders. While maintaining compliance is also important, it is not a primary role in this specific situation.",
+    "expected_points": [
+      "1",
+      "1",
+      "1"
+    ],
+    "question": "A company announces a stock split with a 2-for-1 ratio. What is the primary role of the custodian bank in this situation?",
+    "answer": "The custodian bank plays a crucial role in a stock split by ensuring compliance with the company's legal and regulatory requirements. This includes:\nUpdating Share Records: The custodian bank updates the company's share register to reflect the new share structure after the split. \n1\nIssuing New Share Certificates: They issue new share certificates to shareholders, reflecting the split ratio. \n1\nInforming Shareholders: The custodian bank communicates the completion of the split to shareholders, explaining the rationale and impact on their shareholding. \n1\nMaintaining Compliance: They ensure that all legal and regulatory obligations are met, such as notifying stock exchanges and updating quarterly filings. \n1\n\nIn summary, the custodian bank is essential for managing the technical aspects of the stock split, ensuring that the company's share structure is accurately represented and that all necessary communications are made to shareholders.",
+    "topic": "Corporate Actions",
+    "timestamp": "2026-03-13T14:59:25.769660"
+  },
+  {
+    "score": 10,
+    "category": "Excellent",
+    "feedback": "Correctly identified the custodian's role in updating records after a stock split. Provided a clear explanation of the necessary actions.",
+    "expected_points": [
+      "4.1",
+      "4.2",
+      "4.3"
+    ],
+    "question": "A company's board of directors declares a stock split. The custodian bank is responsible for updating the records of the affected securities. What is the primary action the custodian bank should take in this scenario?",
+    "answer": "The primary action the custodian bank should take when a company's board of directors declares a stock split is to update the records of the affected securities. This involves adjusting the number of shares owned by each shareholder in accordance with the split ratio and maintaining a record of all shareholders. The custodian bank ensures that the official record keeping is accurate and up-to-date, reflecting the new share structure post-split. ",
+    "topic": "Custody",
+    "timestamp": "2026-03-13T15:01:23.798951"
+  },
+  {
+    "score": 0,
+    "category": "Incorrect",
+    "feedback": "Answer could not be evaluated.",
+    "expected_points": [],
+    "question": "A critical system failure has occurred in the organization's core banking system, resulting in a significant disruption to online banking services. The incident manager must prioritize the restoration of services and minimize the impact on customers. Which step in the incident management process should the incident manager take first?",
+    "answer": "Identify and record the incident: The manager must formally recognize that a critical system failure has occurred, document it, and classify it as a major incident.\n\n",
+    "topic": "Incident Management",
+    "timestamp": "2026-03-13T15:13:32.065750"
+  },
+  {
+    "score": 10,
+    "category": "Excellent",
+    "feedback": "Correctly identified the first step in incident management for a critical core banking outage, emphasizing the importance of identifying and logging the incident to trigger the appropriate response team and communication channels.",
+    "expected_points": [
+      "Identify and log the incident",
+      "assign priority/severity",
+      "capture key details"
+    ],
+    "question": "A critical system failure has occurred in the organization's core banking system, resulting in a significant disruption to online banking services. The incident manager must prioritize the restoration of services and minimize the impact on customers. Which step in the incident management process should the incident manager take first?",
+    "answer": "\u2705 First Step in Incident Management (Critical Core Banking Outage)\nWhen a critical system failure disrupts online banking, the very first thing the incident manager must do is:\n\n\u25b6\ufe0f Identify and log the incident (and assign its priority/severity).\n\nThis means:\n\nConfirm the outage/failure is real (not a false alarm)\nCapture key details (what, when, where, impact)\nClassify it as a high-severity / P1 incident\nTrigger the appropriate response team and communication channels immediately\nThis step ensures the incident is formally tracked and that response efforts are mobilized without delay.\n\n",
+    "topic": "Incident Management",
+    "timestamp": "2026-03-13T15:14:22.644120"
   }
 ]

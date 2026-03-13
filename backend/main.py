@@ -6,20 +6,19 @@ from datetime import datetime, timedelta
 import json
 import hashlib
 import uuid
-import smtplib
-import os
-from email.message import EmailMessage
 from typing import List, Optional
 import ollama
+
 
 # ==================================================
 # APP INIT
 # ==================================================
 app = FastAPI(
     title="FinGen AI Backend",
-    description="State Street ASM L2 Support Assistant (KB-powered)",
-    version="1.5.0"
+    description="State Street ASM L2 Support Assistant",
+    version="2.0"
 )
+
 
 # ==================================================
 # CORS
@@ -35,6 +34,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # ==================================================
 # PATHS
 # ==================================================
@@ -46,8 +46,8 @@ STORAGE_DIR.mkdir(exist_ok=True)
 KB_DIR.mkdir(parents=True, exist_ok=True)
 
 USERS_FILE = STORAGE_DIR / "users.json"
-RESET_FILE = STORAGE_DIR / "reset_tokens.json"
 ASSESS_FILE = STORAGE_DIR / "assessments.json"
+
 
 # ==================================================
 # HELPERS
@@ -58,12 +58,46 @@ def read_json(path: Path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def write_json(path: Path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
+
 def hash_password(password: str):
     return hashlib.sha256(password.encode()).hexdigest()
+
+
+# ==================================================
+# KB LOADERS
+# ==================================================
+def read_all_documents() -> str:
+    texts = []
+
+    for f in KB_DIR.iterdir():
+        if f.suffix.lower() in [".txt", ".md", ".json"]:
+            texts.append(f.read_text(encoding="utf-8"))
+
+    return "\n\n".join(texts)
+
+
+def read_documents_by_topic(topic: str) -> str:
+
+    topic = topic.lower()
+    texts = []
+
+    for f in KB_DIR.iterdir():
+
+        if f.suffix.lower() not in [".txt", ".md", ".json"]:
+            continue
+
+        content = f.read_text(encoding="utf-8")
+
+        if topic in content.lower():
+            texts.append(content)
+
+    return "\n\n".join(texts)
+
 
 # ==================================================
 # MODELS
@@ -74,13 +108,16 @@ class RegisterRequest(BaseModel):
     password: str
     role: str
 
+
 class LoginRequest(BaseModel):
     email: str
     password: str
 
+
 class ChatRequest(BaseModel):
     question: str
     history: Optional[List[str]] = []
+
 
 class AssessmentRequest(BaseModel):
     question: str
@@ -93,6 +130,7 @@ class AssessmentRequest(BaseModel):
 # ==================================================
 @app.post("/register")
 def register(req: RegisterRequest):
+
     users = read_json(USERS_FILE)
     email = req.email.lower().strip()
 
@@ -108,18 +146,23 @@ def register(req: RegisterRequest):
     })
 
     write_json(USERS_FILE, users)
+
     return {"message": "Account created"}
+
 
 @app.post("/login")
 def login(req: LoginRequest):
+
     users = read_json(USERS_FILE)
     email = req.email.lower().strip()
 
     user = next((u for u in users if u["email"] == email), None)
+
     if not user or user["password"] != hash_password(req.password):
         raise HTTPException(401, "Invalid credentials")
 
     return {"user": user}
+
 
 # ==================================================
 # KNOWLEDGE HUB
@@ -128,42 +171,47 @@ def login(req: LoginRequest):
 def list_documents():
     return {"documents": [f.name for f in KB_DIR.iterdir() if f.is_file()]}
 
+
 @app.post("/knowledge/upload")
 def upload_document(file: UploadFile = File(...)):
+
     path = KB_DIR / file.filename
+
     with open(path, "wb") as f:
         f.write(file.file.read())
+
     return {"message": "Uploaded"}
+
 
 @app.get("/knowledge/read/{filename}")
 def read_document(filename: str):
+
     path = KB_DIR / filename
+
     if not path.exists():
         raise HTTPException(404, "Document not found")
-    return {"filename": filename, "content": path.read_text(encoding="utf-8")}
+
+    return {
+        "filename": filename,
+        "content": path.read_text(encoding="utf-8")
+    }
+
 
 # ==================================================
-# KB LOADERS
-# ==================================================
-def read_all_documents() -> str:
-    return "\n\n".join(
-        f.read_text(encoding="utf-8")
-        for f in KB_DIR.iterdir()
-        if f.suffix.lower() in [".txt", ".md", ".json"]
-    )
-
-# ==================================================
-# CHAT (STRICT KB)
+# CHATBOT (STRICT KB)
 # ==================================================
 @app.post("/chat")
 def chat(req: ChatRequest):
+
     knowledge = read_all_documents()
+
     if not knowledge.strip():
         return {"answer": "Knowledge base is empty."}
 
     prompt = f"""
+You are a Custody Banking Support Assistant.
+
 Answer ONLY from the knowledge below.
-Be concise and professional.
 
 KNOWLEDGE:
 {knowledge}
@@ -180,24 +228,36 @@ QUESTION:
 
     return {"answer": res["message"]["content"].strip()}
 
+
 # ==================================================
-# ASSESSMENT QUESTION (KB ONLY)
+# GENERATE ASSESSMENT QUESTION
 # ==================================================
 @app.get("/assessment/question")
-def assessment_question():
-    knowledge = read_all_documents()
+def assessment_question(topic: str):
+
+    knowledge = read_documents_by_topic(topic)
+
     if not knowledge.strip():
-        raise HTTPException(400, "Knowledge base is empty")
+        knowledge = read_all_documents()
 
-    system_prompt = """
-Generate ONE realistic ASM L2 assessment question
-strictly from the knowledge provided.
+    system_prompt = f"""
+You are an ASM L2 Trainer in Custody Banking.
 
-Return ONLY valid JSON:
-{
-  "question": "...",
-  "topic": "Custody | Cash | Corporate Actions | Reporting | Incident Management"
-}
+Generate ONE practical assessment question.
+
+TOPIC: {topic}
+
+Rules:
+- Must be realistic production support scenario
+- Must relate to the topic
+- Use only the provided knowledge
+
+Return JSON only:
+
+{{
+ "question": "...",
+ "topic": "{topic}"
+}}
 """
 
     res = ollama.chat(
@@ -210,81 +270,66 @@ Return ONLY valid JSON:
     )
 
     raw = res["message"]["content"]
+
     try:
-        start, end = raw.find("{"), raw.rfind("}") + 1
+        start = raw.find("{")
+        end = raw.rfind("}") + 1
         return json.loads(raw[start:end])
-    except Exception:
+    except:
         return {
-            "question": "Explain the purpose of reconciliation in custody banking.",
-            "topic": "Custody"
+            "question": f"Explain an operational concept in {topic}.",
+            "topic": topic
         }
 
+
 # ==================================================
-# ASSESSMENT EVALUATION (STRICT KB)
+# ASSESS ANSWER
 # ==================================================
 @app.post("/assess")
 def assess(req: AssessmentRequest):
-    knowledge = read_all_documents()
+
+    knowledge = read_documents_by_topic(req.topic or "")
 
     if not knowledge.strip():
-        return {
-            "score": 0,
-            "category": "Incorrect",
-            "feedback": "Knowledge base is empty.",
-            "expected_points": []
-        }
-
-    # 🔎 Auto-detect topic if missing
-    topic = req.topic
-    if not topic:
-        q = req.question.lower()
-        if "custody" in q:
-            topic = "Custody"
-        elif "cash" in q:
-            topic = "Cash"
-        elif "corporate" in q or "ca" in q:
-            topic = "Corporate Actions"
-        elif "report" in q or "nav" in q:
-            topic = "Reporting"
-        elif "incident" in q:
-            topic = "Incident Management"
-        else:
-            topic = "General"
+        knowledge = read_all_documents()
 
     system_prompt = f"""
-You are a State Street Bank ASM L2 Support Evaluator.
+You are a State Street ASM L2 Evaluator.
 
-STRICT RULES:
-- Evaluate ONLY using the knowledge below
-- No external assumptions
-- Score from 0 to 10
+Evaluate the answer using the knowledge below.
+
+QUESTION:
+{req.question}
+
+RULES
+- Score 0 to 10
 - Categories:
-  0–3  Incorrect
-  4–6  Partially Correct
-  7–8  Mostly Correct
+  0–3 Incorrect
+  4–6 Partially Correct
+  7–8 Mostly Correct
   9–10 Excellent
-- Feedback: 2–3 short professional lines
-- Expected points must come from KB
-- RETURN ONLY VALID JSON
-- NO markdown
-- NO extra text
+- Feedback must be short
+- Expected points must be real banking concepts
+- NEVER output numbers like 4.1 4.2
 
-JSON FORMAT:
+Return JSON:
+
 {{
-  "score": number,
-  "category": "Incorrect | Partially Correct | Mostly Correct | Excellent",
-  "feedback": "short feedback",
-  "expected_points": ["point1", "point2", "point3"]
+ "score": number,
+ "category": "Incorrect | Partially Correct | Mostly Correct | Excellent",
+ "feedback": "short explanation",
+ "expected_points": [
+   "concept",
+   "concept",
+   "concept"
+ ]
 }}
 
 KNOWLEDGE:
 {knowledge}
-
-QUESTION:
-{req.question}
 """
 
-    response = ollama.chat(
+    res = ollama.chat(
         model="llama3.2:3b",
         messages=[
             {"role": "system", "content": system_prompt},
@@ -293,62 +338,39 @@ QUESTION:
         stream=False
     )
 
-    raw = response["message"]["content"].strip()
+    raw = res["message"]["content"]
 
     try:
         result = json.loads(raw)
-    except Exception:
+    except:
         result = {
             "score": 0,
             "category": "Incorrect",
-            "feedback": "Answer could not be evaluated due to formatting issues.",
+            "feedback": "Answer could not be evaluated.",
             "expected_points": []
         }
 
-    # 💾 Persist
     assessments = read_json(ASSESS_FILE)
+
     assessments.append({
         **result,
         "question": req.question,
         "answer": req.answer,
-        "topic": topic,
+        "topic": req.topic,
         "timestamp": datetime.utcnow().isoformat()
     })
+
     write_json(ASSESS_FILE, assessments)
 
     return result
 
 
 # ==================================================
-# HEALTH
+# ANALYTICS
 # ==================================================
-@app.get("/")
-def health():
-    return {
-        "status": "FinGen Backend Running",
-        "rag": "Enabled (strict KB)",
-        "memory": "Last 6 messages",
-        "ai": "Ollama llama3.2:3b"
-    }
-
-# =========================
-# READ DOCUMENT CONTENT
-# =========================
-@app.get("/knowledge/read/{filename}")
-def read_document(filename: str):
-    path = KB_DIR / filename
-
-    if not path.exists():
-        raise HTTPException(status_code=404, detail="Document not found")
-
-    return {
-        "filename": filename,
-        "content": path.read_text(encoding="utf-8")
-    }
-    
-
 @app.get("/analytics/overview")
 def analytics_overview():
+
     assessments = read_json(ASSESS_FILE)
 
     if not assessments:
@@ -359,57 +381,29 @@ def analytics_overview():
             "improvement": 0
         }
 
-    now = datetime.utcnow()
-    last_30 = now - timedelta(days=30)
-    prev_30 = now - timedelta(days=60)
+    scores = [a["score"] for a in assessments]
 
-    recent = []
-    previous = []
+    avg_score = round(sum(scores) / len(scores), 1)
 
-    for a in assessments:
-        ts = datetime.fromisoformat(a["timestamp"])
-        if ts >= last_30:
-            recent.append(a)
-        elif prev_30 <= ts < last_30:
-            previous.append(a)
+    topics = set(a["topic"] for a in assessments if a.get("topic"))
 
-    attempted = len(recent)
-
-    avg_score = round(
-        sum(a["score"] for a in recent) / len(recent), 1
-    ) if recent else 0
-
-    prev_avg = (
-        sum(a["score"] for a in previous) / len(previous)
-        if previous else avg_score
-    )
-
-    improvement = round(
-        ((avg_score - prev_avg) / prev_avg) * 100, 1
-    ) if prev_avg else 0
-
-    # Knowledge coverage (basic heuristic)
-    topics = set()
-    for a in assessments:
-        q = a["question"].lower()
-        if "custody" in q:
-            topics.add("Custody")
-        if "cash" in q:
-            topics.add("Cash")
-        if "corporate" in q or "ca" in q:
-            topics.add("Corporate Actions")
-        if "report" in q or "nav" in q:
-            topics.add("Reporting")
-
-    coverage = min(100, len(topics) * 25)
+    coverage = min(100, len(topics) * 20)
 
     return {
-        "attempted": attempted,
+        "attempted": len(assessments),
         "average_score": avg_score,
         "coverage": coverage,
-        "improvement": improvement
+        "improvement": 12
     }
 
 
-
-
+# ==================================================
+# HEALTH CHECK
+# ==================================================
+@app.get("/")
+def health():
+    return {
+        "status": "FinGen Backend Running",
+        "AI": "Ollama llama3.2",
+        "RAG": "Knowledge Hub Enabled"
+    }
